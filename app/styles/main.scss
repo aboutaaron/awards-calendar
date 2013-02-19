@@ -1,0 +1,102 @@
+@import "latimes";
+@import "variables";
+
+// SCAFFOLDING
+// ===========
+
+.app-container {
+    width: 333px;
+    height: 367px; //343px, 408px
+    border: $border;
+    margin-bottom: 19px;
+}
+
+#wrapper {
+    width: 333px;
+    height: 302px;
+    overflow: auto;
+    position: relative; // IE fix
+}
+
+.page-header {
+
+    border-bottom: $border;
+    padding-bottom: 5px;
+    width: 333px;
+
+    h1 {
+        font-family: $serif;
+        margin: 5px 0px -4px 18px;
+        color: $red;
+        font-weight: bold;
+    }
+
+    #subhed {
+        font-family: $sanSerif;
+        font-size: ($defaultFontSize - 1);
+        padding-bottom: 15px;
+        margin: 5px 0px -13px 18px;
+        display: block;
+
+        #full-list {
+            color: #2266CC;
+            font-size: ($defaultFontSize - 4);
+            font-style: italic;
+        }
+    }
+
+}
+
+// LIST
+// ====
+
+#show-list {
+    margin-top: 10px;
+    margin-left: 0px; // LAT override
+    list-style-position: outside; // LAT override
+
+    li {
+        border-bottom: $border;
+        overflow-x: hidden; // Windows fix
+        padding: 15px;
+
+        &:first-child {
+            margin-top: -6px;
+        }
+
+        &:last-child {
+            border-bottom: 0px;
+        }
+    }
+
+    .notable {
+        background-color: lighten($gold, 22%);
+        border-radius: 2px;
+        display: inline-block;
+        padding: 15px 10px 15px 10px;
+        margin-left: -6px;
+        width: 96%;
+
+        a {
+            font-weight: bold;
+        }
+    }
+}
+
+
+
+
+/*.notable {
+    background-color: lighten($gold, 22%);
+    display: inline-block;
+    margin: 5px;
+    border-radius: 2px;
+    width: 307px;
+    .listContent {
+        margin-left: 12px;
+
+        a {
+            font-weight: bold;
+        }
+    }
+}*/
