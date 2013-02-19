@@ -1,4 +1,5 @@
 /*global Handlebars:false */
+// http://stackoverflow.com/questions/8852765/jshint-strict-mode-and-jquery-is-not-defined
 
 require.config({
     paths: {

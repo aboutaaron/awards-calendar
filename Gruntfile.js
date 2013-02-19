@@ -139,7 +139,7 @@ module.exports = function (grunt) {
             dist: {}
         },*/
         requirejs: {
-            dist: {
+            compile: {
                 // Options: https://github.com/jrburke/r.js/blob/master/build/example.build.js
                 options: {
                     // `name` and `out` is set by grunt-usemin
@@ -154,7 +154,8 @@ module.exports = function (grunt) {
                     useStrict: true,
                     wrap: true,
                     //uglify2: {} // https://github.com/mishoo/UglifyJS2
-                    mainConfigFile: 'app/scripts/main.js'
+                    mainConfigFile: 'app/scripts/main.js',
+                    out: 'app/optimized.js'
                 }
             }
         },
