@@ -1,32 +1,26 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Awards Calendar</title>
-    <!-- LA Times styles -->
-    <link rel="stylesheet" href="styles/main.css">
-    <!-- data-main attribute tells require.js to load
-             scripts/main.js after require.js loads. -->
-    <script data-main="scripts/main" src="components/requirejs/require.js"></script>
-  </head>
 
-  <div class="app-container">
-    <div class="page-header">
-        <a href="http://spreadsheets.latimes.com/awards-calendar/">
-          <h1 class="title">Awards Calendar</h1>
-        </a>
-        <small id="subhed">Upcoming nominations and awards</small>
-    </div>
-    <div id="wrapper">
-        <ul id="show-list"></ul>
-
-        <script id="awards-template" type="text/x-handlebars-template">
-          <li>
-            <span class="award {{ notable }}">
-              <a href="{{ link }}">{{ show }}</a> | {{ format-date date }}
-            </span>
-          </li>
-        </script>
-
-    </div>
+<!-- LA Times styles -->
+<link rel="stylesheet" href="styles/main.css">
+<!-- data-main attribute tells require.js to load
+         scripts/main.js after require.js loads. -->
+<script data-main="scripts/main" src="components/requirejs/require.js"></script>
+<div class="app-container">
+  <div class="page-header">
+      <a href="http://spreadsheets.latimes.com/awards-calendar/">
+        <h1 class="title">Awards Calendar</h1>
+      </a>
+      <small id="subhed">Upcoming nominations and awards</small>
   </div>
-</html>
+  <div id="wrapper">
+      <ul id="show-list"></ul>
+
+      <script id="awards-template" type="text/x-handlebars-template">
+        <li>
+          <span class="award {{ notable }}">
+            <a href="{{ link }}">{{ show }}</a> | {{ format-date date }}
+          </span>
+        </li>
+      </script>
+
+  </div>
+</div>
