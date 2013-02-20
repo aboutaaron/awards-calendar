@@ -3,7 +3,12 @@
 <link rel="stylesheet" href="styles/main.css">
 <!-- data-main attribute tells require.js to load
          scripts/main.js after require.js loads. -->
+<!-- build:js scripts/vendor/modernizr.js -->
+<script src="components/modernizr/modernizr.js"></script>
+<!-- endbuild -->
+<!-- build:js scripts/main.js -->
 <script data-main="scripts/main" src="components/requirejs/require.js"></script>
+<!-- endbuild -->
 <div class="app-container">
   <div class="page-header">
       <a href="http://spreadsheets.latimes.com/awards-calendar/">
