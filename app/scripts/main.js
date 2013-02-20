@@ -1,5 +1,4 @@
 /*global Handlebars:false */
-// http://stackoverflow.com/questions/8852765/jshint-strict-mode-and-jquery-is-not-defined
 
 require.config({
     paths: {
@@ -43,12 +42,6 @@ require(['jquery', 'moment', 'handlebars'], function (jQuery, moment) {
         else {
             // Otherwise, format the day in AP style
             return moment(date).format('MMM D, YYYY');
-        }
-    });
-
-    Handlebars.registerHelper('sort-by-date', function () {
-        if (moment(this.date).diff(moment(), 'days') >= 0) {
-            //
         }
     });
 });
