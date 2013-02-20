@@ -6,21 +6,22 @@ See the spreadsheet here: [awards spreadsheet](http://spreadsheets.latimes.com/a
 *You'll need to go into databank to edit the content*
 
 ## Installation
+Here's what you're going to need
 - Node
 - NPM (now included in node package)
 - Grunt
 - Bower
 
-Use binaries on the official node site - [nodejs.org](http://nodejs.org/download/) or...
+You can download the Node package from the official site ([nodejs.org](http://nodejs.org/download/)) or...
 
 On Mac OS X (with homebrew):
-    brew install node
+```brew install node```
 
-Linux:
-    sudo apt-get node
+Linux (I have not tested):
+```sudo apt-get node```
 
-Once Node and NPM are installed, download the grunt command-line tool and bower globally.
-    npm install -g grunt-cli bower
+Once Node and NPM are installed download the grunt and bower command-line tools globally.
+```npm install -g grunt-cli bower```
 
 ## Dependencies
 The Awards Calendar uses the following JS libs:
@@ -33,11 +34,11 @@ These will all be installed via bower
 ## Time for some action
 
 1. clone the repo
-    git clone git@github.com:datadesk/awards-calendar.git
+```git clone git@github.com:datadesk/awards-calendar.git```
 
 2. Hop into the repo and download the dependecies
-    cd awards-calendar
-    npm install && bower install
+    ```cd awards-calendar```
+    ```npm install && bower install```
 
 3. Peep your handy work
-    grunt server
+    ```grunt server```
