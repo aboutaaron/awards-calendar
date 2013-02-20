@@ -143,6 +143,7 @@ module.exports = function (grunt) {
                 // Options: https://github.com/jrburke/r.js/blob/master/build/example.build.js
                 options: {
                     // `name` and `out` is set by grunt-usemin
+                    name: 'app',
                     baseUrl: 'app/scripts',
                     optimize: 'none',
                     // TODO: Figure out how to make sourcemaps work with grunt-usemin
@@ -154,7 +155,8 @@ module.exports = function (grunt) {
                     useStrict: true,
                     wrap: true,
                     //uglify2: {} // https://github.com/mishoo/UglifyJS2
-                    mainConfigFile: 'app/scripts/main.js'
+                    mainConfigFile: 'app/scripts/main.js',
+                    out: 'dist/scripts/main.js'
                 }
             }
         },
