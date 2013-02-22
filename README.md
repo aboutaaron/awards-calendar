@@ -42,3 +42,29 @@ These will all be installed via bower
 
 3. Peep your handy work
     ```grunt server```
+
+## Deploy
+
+Once everything looks good run ```grunt``` to build the final porject
+
+```grunt``` will create a ```dist``` directory with the following structure:
+
+```
+dist
+├── index.html
+├── scripts
+│   ├── main.js
+│   └── vendor
+│       ├── modernizr.js
+│       └── require.js
+└── styles
+    └── main.css
+```
+
+In the future, require will be compiled in ```main.js``` so there will be only one JS file.
+
+You'll need to manually combile the HTML, CSS and JS into a blurb for P2P.
+
+### Next Steps
+- Auto complile HTML, CSS, JS into one flat file
+- Send stuff to s3
