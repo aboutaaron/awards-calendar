@@ -2,6 +2,7 @@
 
 require.config({
     paths: {
+        requireLib: '../components/requirejs/require',
         jquery: '../components/jquery/jquery',
         moment: '../components/moment/moment',
         handlebars: '../components/handlebars/handlebars'
