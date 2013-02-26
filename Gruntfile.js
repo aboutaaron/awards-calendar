@@ -155,10 +155,7 @@ module.exports = function (grunt) {
                     wrap: true,
                     //uglify2: {} // https://github.com/mishoo/UglifyJS2
                     include: 'requireLib',
-                    mainConfigFile: 'app/scripts/main.js',
-                    paths: {
-                        jquery: 'empty:'
-                    }
+                    mainConfigFile: 'app/scripts/main.js'
                 }
             }
         },

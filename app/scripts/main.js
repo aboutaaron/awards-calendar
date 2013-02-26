@@ -3,7 +3,7 @@
 require.config({
     paths: {
         requireLib: '../components/requirejs/require',
-        jquery: 'http://www.latimes.com/hive/javascripts/jquery-1.7.2',
+        jquery: '../components/jquery/jquery',
         moment: '../components/moment/moment',
         handlebars: '../components/handlebars/handlebars'
     }
