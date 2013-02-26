@@ -1,15 +1,15 @@
 <link rel="stylesheet" href="styles/main.css">
 <!-- data-main attribute tells require.js to load
-         scripts/main.js after require.js loads. -->
+         scripts/main.js after require.js loads.
+    build tells grunt to compile script -->
+
 <!-- build:js scripts/main.js -->
 <script data-main="scripts/main" src="components/requirejs/require.js"></script>
 <!-- endbuild -->
 <div class="app-container">
   <div class="page-header">
-      <a href="http://spreadsheets.latimes.com/awards-calendar/">
-        <h1 class="title">Awards Calendar</h1>
-      </a>
-      <small id="subhed">Upcoming nominations and awards</small>
+      <h1 class="title">Event Calendar</h1>
+      <small id="subhed">Upcoming events and festivals</small>
   </div>
   <div id="wrapper">
       <ul id="show-list"></ul>
