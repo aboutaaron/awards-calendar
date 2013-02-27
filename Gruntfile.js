@@ -76,7 +76,7 @@ module.exports = function (grunt) {
         },
         open: {
             server: {
-                url: 'http://localhost:<%= connect.options.port %>'
+                url: 'http://0.0.0.0:<%= connect.options.port %>'
             }
         },
         clean: {
@@ -97,7 +97,7 @@ module.exports = function (grunt) {
             all: {
                 options: {
                     run: true,
-                    urls: ['http://localhost:<%= connect.options.port %>/index.html']
+                    urls: ['http://0.0.0.0:<%= connect.options.port %>/index.html']
                 }
             }
         },
