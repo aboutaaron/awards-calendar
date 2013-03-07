@@ -2254,34 +2254,33 @@ div.mezzanine h3, div.mezzanine h4 {
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/vesuvius\/Code\/award-calendar\/app\/styles\/main\.scss}line{font-family:\0000334}}
 .page-header #subhed {
-  font-family: "Tahoma", Arial, san-serif;
   font-size: 15px;
   padding-bottom: 15px;
   margin: 5px 0px -13px 18px;
   display: block;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/vesuvius\/Code\/award-calendar\/app\/styles\/main\.scss}line{font-family:\0000347}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/vesuvius\/Code\/award-calendar\/app\/styles\/main\.scss}line{font-family:\0000346}}
 #show-list {
   margin-top: 10px;
   margin-left: 0px;
   list-style-position: outside;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/vesuvius\/Code\/award-calendar\/app\/styles\/main\.scss}line{font-family:\0000352}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/vesuvius\/Code\/award-calendar\/app\/styles\/main\.scss}line{font-family:\0000351}}
 #show-list li {
   border-bottom: 2px #cdcdcd solid;
   overflow-x: hidden;
   padding: 15px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/vesuvius\/Code\/award-calendar\/app\/styles\/main\.scss}line{font-family:\0000357}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/vesuvius\/Code\/award-calendar\/app\/styles\/main\.scss}line{font-family:\0000356}}
 #show-list li:first-child {
   margin-top: -6px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/vesuvius\/Code\/award-calendar\/app\/styles\/main\.scss}line{font-family:\0000361}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/vesuvius\/Code\/award-calendar\/app\/styles\/main\.scss}line{font-family:\0000360}}
 #show-list li:last-child {
   border-bottom: 0px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/vesuvius\/Code\/award-calendar\/app\/styles\/main\.scss}line{font-family:\0000366}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/vesuvius\/Code\/award-calendar\/app\/styles\/main\.scss}line{font-family:\0000365}}
 #show-list .notable {
   background-color: #dfca7d;
   border-radius: 2px;
@@ -2290,7 +2289,7 @@ div.mezzanine h3, div.mezzanine h4 {
   margin-left: -6px;
   width: 96%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/vesuvius\/Code\/award-calendar\/app\/styles\/main\.scss}line{font-family:\0000374}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/vesuvius\/Code\/award-calendar\/app\/styles\/main\.scss}line{font-family:\0000373}}
 #show-list .notable a {
   font-weight: bold;
 }
