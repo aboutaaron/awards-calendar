@@ -16,6 +16,7 @@ require(['jquery', 'moment', 'handlebars'], function (jQuery, moment) {
     jQuery.ajax({
         url: 'http://spreadsheets.latimes.com/api/awards-calendar.json',
         cache: true,
+        dataType: 'json',
         success: function (data) {
             // Iterate over JSON objects
             jQuery.each(data, function () {
