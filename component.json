@@ -5,9 +5,9 @@
     "requirejs": "~2.1.4",
     "modernizr": "~2.6.2",
     "moment": "~2.0.0",
-    "handlebars": "~1.0.0"
+    "handlebars": "~1.0.0",
+    "jquery": "~1.9.1"
   },
   "devDependencies": {
-    "jquery": "~1.9.1"
   }
 }

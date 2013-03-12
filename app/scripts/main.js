@@ -5,18 +5,23 @@ require.config({
         requireLib: '../components/requirejs/require',
         jquery: '../components/jquery/jquery',
         moment: '../components/moment/moment',
-        handlebars: '../components/handlebars/handlebars'
+        handlebars: '../components/handlebars/handlebars',
+        ajaxTransport: '../components/jQuery-ajaxTransport-XDomainRequest/jQuery.XDomainRequest'
+    },
+    shim: {
+        'ajaxTransport' : ['jquery']
     }
 });
 
-require(['jquery', 'moment', 'handlebars'], function (jQuery, moment) {
+require(['jquery', 'moment', 'handlebars', 'ajaxTransport'], function (jQuery, moment) {
     'use strict';
     // Fetch the json of the awards calender
     // Edit (inside firewall only): http://databank-spreadsheets.latimes.com/admin/table_stacker/table/73/
     jQuery.ajax({
         url: 'http://spreadsheets.latimes.com/api/awards-calendar.json',
-        cache: true,
+        cache: false,
         dataType: 'json',
+        error: function(jqXHR, textStatus, errorThrown) { console.log(errorThrown); },
         success: function (data) {
             // Iterate over JSON objects
             jQuery.each(data, function () {
