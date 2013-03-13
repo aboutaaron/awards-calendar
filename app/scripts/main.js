@@ -21,7 +21,7 @@ require(['jquery', 'moment', 'handlebars', 'ajaxTransport'], function (jQuery, m
         url: 'http://spreadsheets.latimes.com/api/awards-calendar.json',
         cache: false,
         dataType: 'json',
-        error: function(jqXHR, textStatus, errorThrown) { console.log(errorThrown); },
+        error: function (jqXHR, textStatus, errorThrown) { console.log(errorThrown); },
         success: function (data) {
             // Iterate over JSON objects
             jQuery.each(data, function () {
