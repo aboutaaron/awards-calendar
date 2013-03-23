@@ -15,11 +15,13 @@
       <ul id="show-list"></ul>
 
       <script id="awards-template" type="text/x-handlebars-template">
+        {{#withSort "date"}}
         <li>
           <span class="event {{ notable }}">
             <a href="{{ link }}">{{ show }}</a> | {{ format-date date }}
           </span>
         </li>
+        {{/withSort}}
       </script>
 
   </div>
