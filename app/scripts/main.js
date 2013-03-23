@@ -23,8 +23,10 @@ require(['jquery', 'moment', 'handlebars', 'ajaxTransport'], function (jQuery, m
         dataType: 'json',
         error: function (jqXHR, textStatus, errorThrown) { console.log(errorThrown); },
         success: function (data) {
+            // Sort by date
+            var sorted_data = data.sort(function(a,b) { return parseFloat(a.date) - parseFloat(b.date) } );
             // Iterate over JSON objects
-            jQuery.each(data, function () {
+            jQuery.each(sorted_data, function () {
                 // Handlebars
                 var source = jQuery('#awards-template').html();
                 var template = Handlebars.compile(source);
