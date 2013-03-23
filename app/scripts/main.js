@@ -6,7 +6,6 @@ require.config({
         jquery: '../components/jquery/jquery',
         moment: '../components/moment/moment',
         handlebars: '../components/handlebars/handlebars',
-        swag: '../components/swag/lib/swag',
         ajaxTransport: '../components/jQuery-ajaxTransport-XDomainRequest/jQuery.XDomainRequest'
     },
     shim: {
@@ -14,7 +13,7 @@ require.config({
     }
 });
 
-require(['jquery', 'moment', 'handlebars', 'swag', 'ajaxTransport'], function (jQuery, moment) {
+require(['jquery', 'moment', 'handlebars', 'ajaxTransport'], function (jQuery, moment) {
     'use strict';
     // Fetch the json of the awards calender
     // Edit (inside firewall only): http://databank-spreadsheets.latimes.com/admin/table_stacker/table/73/
