@@ -6,7 +6,8 @@
     "moment": "~2.0.0",
     "handlebars": "~1.0.0",
     "jquery": "~1.9.1",
-    "jQuery-ajaxTransport-XDomainRequest" : "MoonScript/jQuery-ajaxTransport-XDomainRequest"
+    "jQuery-ajaxTransport-XDomainRequest" : "MoonScript/jQuery-ajaxTransport-XDomainRequest",
+    "swag": "elving/swag"
   },
   "devDependencies": {
   }
