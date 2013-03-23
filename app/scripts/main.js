@@ -24,9 +24,9 @@ require(['jquery', 'moment', 'handlebars', 'ajaxTransport'], function (jQuery, m
         error: function (jqXHR, textStatus, errorThrown) { console.log(errorThrown); },
         success: function (data) {
             // Sort by date
-            var sorted_data = data.sort(function(a,b) { return parseFloat(a.date) - parseFloat(b.date) } );
+            var sortedData = data.sort(function (a, b) { return parseFloat(a.date) - parseFloat(b.date); });
             // Iterate over JSON objects
-            jQuery.each(sorted_data, function () {
+            jQuery.each(sortedData, function () {
                 // Handlebars
                 var source = jQuery('#awards-template').html();
                 var template = Handlebars.compile(source);
