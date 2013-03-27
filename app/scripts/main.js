@@ -35,7 +35,7 @@ require(['jquery', 'moment', 'handlebars', 'ajaxTransport'], function (jQuery, m
                 // append to the DOM.
                 // http://momentjs.com/docs/#/displaying/dif ference/
                 if (moment(this.date).diff(moment(), 'days') >= 0) {
-                    jQuery('ul').append(template(this));
+                    jQuery('#show-list').append(template(this));
                 }
             }); // .each()
         } // function (data)
